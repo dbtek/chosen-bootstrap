@@ -3,6 +3,8 @@ chosen-bootstrap
 
 Bootstrap  3 look &amp; feel for chosen. Based on [bootstrap-chosen](https://github.com/alxlit/bootstrap-chosen).
 
+![screenshot](https://raw.github.com/dbtek/chosen-bootstrap/master/screenshot.jpg)
+
 ##Install
 ```
 bower install chosen-bootstrap
