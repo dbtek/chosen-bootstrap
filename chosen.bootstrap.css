@@ -1,6 +1,6 @@
 /*!
  * Chosen Bootstrap Look & Feel
- * Compiled CSS of bootstrap-chosen (https://github.com/alxlit/bootstrap-chosen)
+ * Based on bootstrap-chosen (https://github.com/alxlit/bootstrap-chosen)
  * @author İsmail Demirbilek (@dbtek)
  * https://github.com/dbtek/chosen-bootstrap
  */
@@ -23,8 +23,8 @@
 
 .chosen-container .chosen-drop {
     background: #fff;
-    border: 1px solid #999;
-    border-top-color: #d9d9d9;
+    border: 1px solid rgba(82,168,236,0.8);
+    border-top: 0;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     -webkit-box-shadow: 0 8px 8px rgba(0,0,0,.25);
@@ -34,6 +34,9 @@
     top: 100%;
     left: -9000px;
     z-index: 1060;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 4px 8px rgba(82,168,236,.6);
+    -webkit-transition: border linear .2s,box-shadow linear .2s;
 }
 
 .chosen-container.chosen-with-drop .chosen-drop {
@@ -130,15 +133,7 @@
 
 .chosen-container-single .chosen-single {
     background-color: #fff;
-    background-image: -webkit-gradient(linear,left 0,left 100%,from(#fff),to(#eee));
-    background-image: -webkit-linear-gradient(top,#fff,0%,#eee,100%);
-    background-image: -moz-linear-gradient(top,#fff 0,#eee 100%);
-    background-image: linear-gradient(to bottom,#fff 0,#eee 100%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffeeeeee',GradientType=0);
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
     border: 1px solid #ccc;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
@@ -151,6 +146,7 @@
     position: relative;
     text-decoration: none;
     white-space: nowrap;
+    border-radius: 4px;
 }
 
 .chosen-container-single .chosen-single span {
@@ -291,12 +287,7 @@
     border-top-left-radius: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    background-image: -webkit-gradient(linear,left 0,left 100%,from(#fff),to(#eee));
-    background-image: -webkit-linear-gradient(top,#fff,0%,#eee,100%);
-    background-image: -moz-linear-gradient(top,#fff 0,#eee 100%);
-    background-image: linear-gradient(to bottom,#fff 0,#eee 100%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffeeeeee',GradientType=0);
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     color: #333;
@@ -348,12 +339,14 @@
 }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
-    background-color: #eee;
     border: 1px solid rgba(82,168,236,0.8);
+    border-bottom: 0;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(82,168,236,.6);
     box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(82,168,236,.6);
     -webkit-transition: border linear .2s,box-shadow linear .2s;
     transition: border linear .2s,box-shadow linear .2s;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .chosen-container-active.chosen-with-drop .chosen-single div {
