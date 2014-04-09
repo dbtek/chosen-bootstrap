@@ -15,6 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "~3.1.1",
-    "chosen": "~1.1.0"
+    "chosen": "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip"
   }
 }
